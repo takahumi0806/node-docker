@@ -52,6 +52,21 @@ MYSQL_PASSWORD=root
 MYSQL_DATABASE=post_dbと入力
 
 $ docker-compose build
+$ docker-compose run --rm app /bin/bash
+#コンテナ起動
+$ npm install
+$ npm install express --save
+$ npm install ejs --save
+$ npm install nodemon
+$ npm install mysql
+$ npm install body-parser
+$ npm install passport
+$ npm install passport-local
+$ npm install jsonwebtoken
+$ npm install --save express-validator
+$ npm install express-session
+$ exit
+#コンテナを抜ける
 ```
 # Author
 * 作成者/yabuta
