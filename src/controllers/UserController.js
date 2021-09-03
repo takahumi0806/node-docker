@@ -9,14 +9,13 @@ const con = mysql.createConnection({
   database: 'post_db',
 });
 
-con.connect(function (err) {
-  if (err) throw err;
-  console.log('Connected');
-});
-
 module.exports = {
   doGetUser: (req, res, error) => {
-    res.render('index', {});
+    res.render('index', {
+      errorMessage: [
+        { msg: '' },
+      ],
+    });
   },
   doPostUser: (req, res) => {
     const errors = validationResult(req);
