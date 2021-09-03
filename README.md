@@ -14,7 +14,6 @@ node.js v14.4.0
 Docker Engine Version: 20.10.5
 ```
 # Installation
-#
 $ npm init
 #
 $ npm install express --save
