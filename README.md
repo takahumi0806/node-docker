@@ -9,6 +9,8 @@
 新規ユーザー登録、ログイン機能を実装、今後コメントの投稿、編集、削除機能を追加していく。
  
 # Requirement
+node.js v14.4.0
+Docker Engine Version: 20.10.5
 #
 $ npm init
 #
@@ -50,7 +52,6 @@ MYSQL_SERVER=mysql
 MYSQL_USER=takafumi
 MYSQL_PASSWORD=root
 MYSQL_DATABASE=post_dbと入力
-
 $ docker-compose build
 $ docker-compose run --rm app /bin/bash
 #コンテナ起動
