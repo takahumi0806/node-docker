@@ -27,9 +27,6 @@ services:
     environment:
       - TZ=Asia/Tokyo
       - DEBUG=app:*
-      - MYSQL_SERVER=${MYSQL_SERVER}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
 
     tty: true
     ports:
@@ -38,7 +35,7 @@ services:
     volumes:
       - ./src:/app
     working_dir: /app
-    command: npm start
+    command: npm run dev
     networks:
       - container-link
     depends_on:
