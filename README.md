@@ -9,7 +9,7 @@
 新規ユーザー登録、ログイン機能を実装、今後コメントの投稿、編集、削除機能を追加していく。
  
 # Requirement
- 
+#
 $ npm init
 #
 $ npm install express --save
@@ -32,9 +32,6 @@ $ npm install --save express-validator
 #
 $ npm install express-session
 #
-$ npm install -g db-migrate
-#
-$ npm install db-migrate-mysql
  
 Requirementで列挙したライブラリなどのインストール方法を説明する
  
