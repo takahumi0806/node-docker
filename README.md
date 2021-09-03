@@ -67,6 +67,16 @@ $ npm install --save express-validator
 $ npm install express-session
 $ exit
 #コンテナを抜ける
+$ docker-compose up -d
+#コンテナID確認
+$ docker ps
+$　docker exec -it コンテナID bash
+#mysql起動
+$mysql -u root -p
+#パスワード入力
+#データベース作成されているか確認
+show databases;
+exit
 ```
 # Author
 * 作成者/yabuta
