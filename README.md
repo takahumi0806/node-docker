@@ -9,8 +9,10 @@
 新規ユーザー登録、ログイン機能を実装、今後コメントの投稿、編集、削除機能を追加していく。
  
 # Requirement
+```bash
 node.js v14.4.0
 Docker Engine Version: 20.10.5
+```
 #
 $ npm init
 #
