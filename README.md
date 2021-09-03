@@ -41,13 +41,17 @@ Requirementで列挙したライブラリなどのインストール方法を説
 DEMOの実行方法など、"hoge"の基本的な使い方を説明する
  
 ```bash
-$ git clone https://github.com/takahumi0806/board.git
-＄ cd board
-$ mysql.server start
-$ mysql -u root -p
-password入力
-$ create database post_db;  databaseの作成
-＄ db-migrate up table作成
+$ git clone https://github.com/takahumi0806/node-docker.git
+＄ cd node-docker
+.envファイル作成
+MYSQL_ROOT_HOST=%
+MYSQL_ROOT_PASSWORD=root
+MYSQL_SERVER=mysql
+MYSQL_USER=takafumi
+MYSQL_PASSWORD=root
+MYSQL_DATABASE=post_dbと入力
+
+$ docker-compose build
 ```
 # Author
 * 作成者/yabuta
