@@ -38,10 +38,10 @@ $ npm install express-session
 #
 
 # Usage
-# 開発環境の立ち上げ
-```bash
 $ git clone https://github.com/takahumi0806/node-docker.git
 ＄ cd node-docker
+# 開発環境の立ち上げ
+```bash
 .envファイル作成
 MYSQL_ROOT_HOST=%
 MYSQL_ROOT_PASSWORD=root
