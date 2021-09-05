@@ -71,7 +71,9 @@ $ npm install --save express-validator
 $ npm install express-session
 $ exit
 #コンテナを抜ける
+```
 5.データベース確認
+```bash
 #コンテナID確認
 $ docker ps
 $　docker exec -it コンテナID bash
