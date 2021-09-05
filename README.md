@@ -44,14 +44,16 @@ $ git clone https://github.com/takahumi0806/node-docker.git
 1.設定ファイル(.env)を生成する。
 ```bash
 .envファイル作成
-MYSQL_ROOT_HOST=%
-MYSQL_ROOT_PASSWORD=root
-MYSQL_SERVER=mysql
-MYSQL_USER=takafumi
-MYSQL_PASSWORD=root
-MYSQL_DATABASE=post_dbと入力
+```
+2.dockerイメーげを生成する
+```bash
 $ docker-compose build
+```
+```bash
+
 $ docker-compose run --rm app /bin/bash
+```
+```bash
 #コンテナ起動
 $ npm install
 $ npm install express --save
