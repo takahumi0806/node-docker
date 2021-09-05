@@ -50,11 +50,13 @@ $ touch .env
 ```bash
 $ docker-compose build
 ```
+3.dockerコンテナを起動する
 ```bash
-
-$ docker-compose run --rm app /bin/bash
+$ docker-compose up -d
 ```
+
 ```bash
+$ docker-compose run --rm app /bin/bash
 #コンテナ起動
 $ npm install
 $ npm install express --save
