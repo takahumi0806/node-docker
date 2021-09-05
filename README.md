@@ -54,11 +54,10 @@ $ docker-compose build
 3.dockerコンテナを起動する
 ```bash
 $ docker-compose up -d
-```
-
-```bash
 $ docker-compose run --rm app /bin/bash
-#コンテナ起動
+```
+4.インストールする
+```bash
 $ npm install
 $ npm install express --save
 $ npm install ejs --save
@@ -72,7 +71,7 @@ $ npm install --save express-validator
 $ npm install express-session
 $ exit
 #コンテナを抜ける
-$ docker-compose up -d
+5.データベース確認
 #コンテナID確認
 $ docker ps
 $　docker exec -it コンテナID bash
