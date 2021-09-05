@@ -44,6 +44,7 @@ $ git clone https://github.com/takahumi0806/node-docker.git
 1.設定ファイル(.env)を生成する。
 ```bash
 .envファイル作成
+$ touch .env
 ```
 2.dockerイメーげを生成する
 ```bash
