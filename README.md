@@ -43,8 +43,6 @@ $ git clone https://github.com/takahumi0806/node-docker.git
 ＄ cd node-docker
 # 開発環境の立ち上げ
 1.設定ファイル(.env)を生成する。
-  app.envをコピーして  
-  .env.exampleファイルに貼り付ける
 ```bash
 .envファイル作成
 $ cp .env.example .env
