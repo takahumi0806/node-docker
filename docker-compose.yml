@@ -10,13 +10,13 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
     ports:
       - '3306:3306'
     restart: always
     volumes:
       - ./mysql/conf:/etc/mysql/conf.d/:ro
-      - mysqldata:/var/lib/mysql
+      - ./mysql/conf/sql:/docker-entrypoint-initdb.d
     networks:
       - container-link
 
@@ -27,10 +27,7 @@ services:
     environment:
       - TZ=Asia/Tokyo
       - DEBUG=app:*
-      - MYSQL_SERVER=${MYSQL_SERVER}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
     tty: true
     ports:
       - '3000:3000'
@@ -38,7 +35,7 @@ services:
     volumes:
       - ./src:/app
     working_dir: /app
-    command: npm start
+    command: npm run dev
     networks:
       - container-link
     depends_on:

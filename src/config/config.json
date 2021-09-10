@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "docker",
+    "database": "post_db",
     "host": "mysql",
     "dialect": "mysql"
   },
