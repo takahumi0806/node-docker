@@ -38,6 +38,7 @@ $ npm install express-session
 #
 $ npm install --save sequelize
 #
+$ npm install --save pg pg-hstore
 
 # Usage
 $ git clone https://github.com/takahumi0806/node-docker.git 
