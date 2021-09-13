@@ -36,6 +36,8 @@ $ npm install --save express-validator
 #
 $ npm install express-session
 #
+$ npm install --save sequelize
+#
 
 # Usage
 $ git clone https://github.com/takahumi0806/node-docker.git 
