@@ -72,6 +72,8 @@ $ npm install passport-local
 $ npm install jsonwebtoken
 $ npm install --save express-validator
 $ npm install express-session
+$ npm install --save sequelize
+$ npm install --save pg pg-hstore
 $ exit
 #コンテナを抜ける
 ```
